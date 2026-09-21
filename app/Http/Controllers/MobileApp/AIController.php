@@ -337,7 +337,7 @@ class AIController extends Controller
                     'assistant',
                 ])
                 ->latest('id')
-                ->limit(30)
+                ->limit(12)
                 ->get()
                 ->reverse();
 
