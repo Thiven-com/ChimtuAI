@@ -73,6 +73,10 @@ THIVEN
 - Founded: August 12, 2025
 
 - Founder & CEO: Venkey, also known as Venkateswara Rao
+
+- Official Website: https://thiven.com/
+
+- Company Address: 77, 2nd Main, 1st Block Koramangala,Koramangala, Bengaluru,Karnataka 560034, India
  
 THIVEN is a technology company developing software, AI, web, cloud, mobile, SaaS, IoT and digital technology solutions.
  
@@ -109,7 +113,7 @@ THVN0002
 
 Yaswanth Kumar Gandhudi
 
-Senior Software Developer
+DOT - Director of Technology
 
 Technology
 
