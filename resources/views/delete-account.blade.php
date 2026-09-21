@@ -6,9 +6,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Delete Account | Chintu AI</title>
+    <title>Delete Account | Chimtu AI</title>
 
-    <meta name="description" content="Request deletion of your Chintu AI account and associated information.">
+    <meta name="description" content="Request deletion of your Chimtu AI account and associated information.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -912,7 +912,7 @@
                 <div class="logo-content">
 
                     <div class="logo-title">
-                        Chintu<span>ai</span>
+                        Chimtu<span>ai</span>
                     </div>
 
                     <div class="logo-subtitle">
@@ -949,7 +949,7 @@
             <!-- Header Button -->
             <a href="{{ url('/') }}" class="header-button">
 
-                <span>Get Chintu AI</span>
+                <span>Get Chimtu AI</span>
 
                 <i class="fa-solid fa-arrow-right"></i>
 
@@ -1052,7 +1052,7 @@
                             </h3>
 
                             <p>
-                                You can request deletion of your Chintu AI
+                                You can request deletion of your Chimtu AI
                                 account and associated eligible personal
                                 information at any time.
                             </p>
@@ -1081,7 +1081,7 @@
                         </div>
 
                         <p>
-                            If you no longer want to use Chintu AI, you can
+                            If you no longer want to use Chimtu AI, you can
                             request permanent deletion of your account.
                         </p>
 
@@ -1104,12 +1104,12 @@
 
                             <p>
                                 Send us an email from the email address
-                                associated with your Chintu AI account.
+                                associated with your Chimtu AI account.
                                 Please mention that you want to delete
-                                your Chintu AI account.
+                                your Chimtu AI account.
                             </p>
 
-                            <a href="mailto:hello@thiven.com?subject=Chintu%20AI%20-%20Account%20Deletion%20Request"
+                            <a href="mailto:hello@thiven.com?subject=Chimtu%20AI%20-%20Account%20Deletion%20Request"
                                 class="mail-button">
 
                                 <i class="fa-solid fa-envelope"></i>
@@ -1154,7 +1154,7 @@
 
                             <li>
                                 Include the email address registered with
-                                your Chintu AI account.
+                                your Chimtu AI account.
                             </li>
 
                             <li>
@@ -1193,7 +1193,7 @@
                         <p>
                             When your deletion request is processed, we will
                             delete eligible information associated with your
-                            Chintu AI account.
+                            Chimtu AI account.
                         </p>
 
                         <ul class="content-list">
@@ -1302,7 +1302,7 @@
                                 questions.
                             </p>
 
-                            <a href="mailto:hello@thiven.com?subject=Chintu%20AI%20-%20Account%20Deletion%20Request"
+                            <a href="mailto:hello@thiven.com?subject=Chimtu%20AI%20-%20Account%20Deletion%20Request"
                                 class="mail-button">
 
                                 <i class="fa-solid fa-envelope"></i>
@@ -1334,7 +1334,7 @@
         <div class="container footer-inner">
 
             <div class="footer-copy">
-                © {{ date('Y') }} Chintu AI. All rights reserved.
+                © {{ date('Y') }} Chimtu AI. All rights reserved.
             </div>
 
             <div class="footer-links">
