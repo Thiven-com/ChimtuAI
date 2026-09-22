@@ -1334,7 +1334,8 @@
                 <p>Start using Chimtu AI and put an intelligent assistant in your pocket, on your desktop and wherever
                     your work happens.</p>
                 <div class="store-buttons">
-                    <a href="#" class="store"><i class="fa-brands fa-google-play"></i>
+                    <a href="https://play.google.com/store/apps/details?id=chimtuai.thiven.com" target="_blank"
+                        class="store"><i class="fa-brands fa-google-play"></i>
                         <div><small>GET IT ON</small><strong>Google Play</strong></div>
                     </a>
                     <a href="#" class="store"><i class="fa-brands fa-apple"></i>
@@ -1351,29 +1352,80 @@
                 <div class="section-head reveal">
                     <span class="eyebrow">FAQ</span>
                     <h2>Questions, <span style="color:#b56f26">answered.</span></h2>
-                    <p>Quick answers to common questions about Chimtu AI.</p>
+                    <p>Everything you need to know about Chimtu AI.</p>
                 </div>
+
                 <div class="faq-list">
+
                     <details class="reveal">
                         <summary>What is Chimtu AI?</summary>
-                        <p>Chimtu AI is an intelligent assistant designed to help you chat, create content, understand
-                            information, generate ideas and complete everyday tasks.</p>
+                        <p>
+                            Chimtu AI is your everyday intelligent assistant. You can use it to ask questions,
+                            understand information, write and improve content, generate ideas, solve problems,
+                            and get help with everyday tasks.
+                        </p>
                     </details>
+
                     <details class="reveal">
-                        <summary>Who can use Chimtu AI?</summary>
-                        <p>Chimtu AI is designed for students, professionals, businesses, developers, creators and
-                            anyone who wants practical AI assistance.</p>
+                        <summary>What can I use Chimtu AI for?</summary>
+                        <p>
+                            You can use Chimtu AI for writing, learning, brainstorming, summarizing information,
+                            answering questions, planning, content creation, coding assistance, and many other
+                            everyday tasks.
+                        </p>
                     </details>
+
                     <details class="reveal">
-                        <summary>Can I use voice and images?</summary>
-                        <p>The landing page is prepared to showcase voice and image input. Connect these buttons to your
-                            application's actual capabilities and API flows.</p>
+                        <summary>Is Chimtu AI suitable for students and professionals?</summary>
+                        <p>
+                            Yes. Chimtu AI can assist students with learning and research while helping
+                            professionals with writing, ideas, productivity, communication, and day-to-day
+                            work.
+                        </p>
                     </details>
+
                     <details class="reveal">
-                        <summary>Where can I download it?</summary>
-                        <p>Add your live Google Play and App Store URLs to the store buttons in this page. The current
-                            buttons are placeholders.</p>
+                        <summary>Can I communicate with Chimtu AI using voice?</summary>
+                        <p>
+                            Chimtu AI can be designed to support natural voice-based interactions, allowing you
+                            to communicate with your AI assistant more conveniently without typing every request.
+                        </p>
                     </details>
+
+                    <details class="reveal">
+                        <summary>Can Chimtu AI understand images?</summary>
+                        <p>
+                            Chimtu AI can support image-based interactions where available, helping you
+                            understand, analyze, or ask questions about visual information.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Is my information safe with Chimtu AI?</summary>
+                        <p>
+                            We take privacy and security seriously. Chimtu AI is designed with responsible
+                            handling of user information in mind. Please review our Privacy Policy to understand
+                            how your information is collected, used, and protected.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Can Chimtu AI help me create content?</summary>
+                        <p>
+                            Yes. Chimtu AI can help you create emails, messages, social media content,
+                            descriptions, ideas, summaries, documents, and other types of written content.
+                        </p>
+                    </details>
+
+                    <details class="reveal">
+                        <summary>Where can I get Chimtu AI?</summary>
+                        <p>
+                            Chimtu AI will be available through the official platforms provided by us.
+                            Use the download buttons on this website to access the supported application
+                            when it becomes available.
+                        </p>
+                    </details>
+
                 </div>
             </div>
         </section>
