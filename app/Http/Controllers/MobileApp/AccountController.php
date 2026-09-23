@@ -5,8 +5,10 @@ namespace App\Http\Controllers\MobileApp;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ProfileCollection;
 use App\Models\Customer;
+use App\Services\WhatsAppService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class AccountController extends Controller
@@ -24,12 +26,28 @@ class AccountController extends Controller
                 'message' => $validator->errors()->first()
             ]);
         }
-        $otp = 1234;//rand(1000,9999);
+        $otp = rand(1000,9999);
         $check = Customer::where('mobile', $request->mobile)->first();
         if (!empty($check->id)) {
             $user = Customer::where('mobile', $request->mobile)->first();
             $user->otp = $otp;
             $user->save();
+
+            try {
+                $data = $this->sendWhatsAppMessage(
+                    $user->mobile,
+                    'login_otp',
+                    [
+                        'field_1' => $otp,
+
+                    ]
+                );
+                $whatsappService = new WhatsAppService();
+                $result = $whatsappService->sendTemplateMessage($data);
+
+            } catch (\Throwable $e) {
+                Log::error('SMS send failed: ' . $e->getMessage());
+            }
 
             return response()->json([
                 'success' => 1,
@@ -42,6 +60,21 @@ class AccountController extends Controller
             $user->otp = $otp;
             $user->save();
 
+            try {
+                $data = $this->sendWhatsAppMessage(
+                    $user->mobile,
+                    'login_otp',
+                    [
+                        'field_1' => $otp,
+
+                    ]
+                );
+                $whatsappService = new WhatsAppService();
+                $result = $whatsappService->sendTemplateMessage($data);
+
+            } catch (\Throwable $e) {
+                Log::error('SMS send failed: ' . $e->getMessage());
+            }
 
             return response()->json([
                 'success' => 1,
@@ -102,5 +135,35 @@ class AccountController extends Controller
             $responseData = array('success' => 0, 'message' => "Your Records were Not Found, Please Register!");
             return json_encode($responseData);
         }
+    }
+
+    private function sendWhatsAppMessage($cust_mobile, $templateName, array $fields = [])
+    {
+
+        $data = [
+            "from_phone_number_id" => "1326275880562410",
+            "phone_number" => '91' . $cust_mobile,
+            "template_name" => $templateName,
+            "template_language" => "en_Us",
+            "header_image" => "https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_1280.jpg",
+            "header_video" => "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "header_document" => "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "header_document_name" => "",
+            "header_field_1" => "{full_name}",
+            "location_latitude" => "",
+            "location_longitude" => "",
+            "location_name" => "",
+            "location_address" => "",
+            "field_1" => $fields['field_1'] ?? '',
+            "field_2" => $fields['field_2'] ?? '',
+            "field_3" => $fields['field_3'] ?? '',
+            "field_4" => $fields['field_4'] ?? '',
+            "field_5" => $fields['field_5'] ?? '',
+            "button_0" => $fields['field_1'],
+            "button_1" => "{phone_number}",
+            "copy_code" => $fields['field_1'],
+        ];
+
+        return $data;
     }
 }
