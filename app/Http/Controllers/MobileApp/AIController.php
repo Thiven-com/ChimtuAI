@@ -312,7 +312,7 @@ class AIController extends Controller
                 ->where('role', 'user')
                 ->count();
 
-            if ($messageCount >= 10) {
+            if ($messageCount >= 20) {
                 return response()->json([
                     'success' => 1,
                     'message' => 'You have reached the maximum limit for this chat.',
