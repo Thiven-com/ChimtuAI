@@ -314,7 +314,7 @@ class AIController extends Controller
 
             if ($messageCount >= 10) {
                 return response()->json([
-                    'success' => 0,
+                    'success' => 1,
                     'message' => 'You have reached the maximum limit for this chat.',
                     'data' => [
                         'limit' => 20,
