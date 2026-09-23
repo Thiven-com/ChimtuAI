@@ -308,6 +308,21 @@ class AIController extends Controller
                 ]);
             }
 
+            $messageCount = $chatroom->messages()
+                ->where('role', 'user')
+                ->count();
+
+            if ($messageCount >= 10) {
+                return response()->json([
+                    'success' => 0,
+                    'message' => 'You have reached the maximum limit for this chat.',
+                    'data' => [
+                        'limit' => 20,
+                        'used' => $messageCount,
+                        'remaining' => 0,
+                    ],
+                ]);
+            }
 
             /*
             |--------------------------------------------------------------------------
