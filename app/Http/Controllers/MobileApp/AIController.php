@@ -351,6 +351,9 @@ class AIController extends Controller
                     'user',
                     'assistant',
                 ])
+                ->where('status', 'completed')
+                ->whereNotNull('message')
+                ->where('message', '!=', '')
                 ->latest('id')
                 ->limit(12)
                 ->get()
@@ -519,7 +522,7 @@ class AIController extends Controller
                     AiMessage::create([
                         'chatroom_id' => $chatroom->id,
                         'role' => 'assistant',
-                        'message' => null,
+                        'message' => '',
                         'message_type' => 'text',
                         'openai_model' => config(
                             'services.openai_app.model',
